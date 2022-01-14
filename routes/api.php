@@ -18,7 +18,6 @@ use Illuminate\Support\Facades\Route;
 Route::post('register', [AuthController::class, 'register'])->name('register');
 Route::post('login', [AuthController::class, 'login'])->name('login');
 Route::group(['middleware' => ['auth:sanctum']], function(){
-//    return $request->user();
     Route::resource('students', StudentController::class);
 });
 
