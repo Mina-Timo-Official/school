@@ -30,7 +30,7 @@ class assignOrderNumberListener
     {
 //        dd($event->orderNumber);
 
-        Mail::to("test@gmail.com")->send(new eventIsFiredMail($event->orderNumber));
+        Mail::to("Admin@gmail.com")->send(new eventIsFiredMail($event->orderNumber));
 
     }
 }
