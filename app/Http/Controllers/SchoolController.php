@@ -13,6 +13,12 @@ class SchoolController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+
+    public function orderSchool(){
+        $order = random_int(1,10);
+        return response([
+            "message" => "the order schools ".$order], 200);
+    }
     public function index()
     {
         //
