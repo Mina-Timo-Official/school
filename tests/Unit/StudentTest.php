@@ -34,7 +34,7 @@ class StudentTest extends TestCase
             'name' => "minaa",
             'school_id' => 2,
         ], $this->headers);
-        $response->assertStatus(200);
+        $response->assertStatus(201);
 
     }
 
